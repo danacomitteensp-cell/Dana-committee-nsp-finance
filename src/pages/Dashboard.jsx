@@ -14,7 +14,7 @@ import {
   Plus,
   Clock,
   Users,
-  PiggyBank,
+  Banknote,
   Receipt,
   BarChart3,
   AlertCircle,
@@ -77,7 +77,7 @@ export default function Dashboard() {
 
   const quickActions = [
     { to: '/lavazam', icon: Users, label: 'Record Payment', color: 'text-blue-600 bg-blue-50' },
-    { to: '/collections/add', icon: PiggyBank, label: 'Add Collection', color: 'text-purple-600 bg-purple-50' },
+    { to: '/collections/add', icon: Banknote, label: 'Add Collection', color: 'text-purple-600 bg-purple-50' },
     { to: '/expenses/add', icon: Receipt, label: 'Add Expense', color: 'text-red-500 bg-red-50' },
     { to: '/reports', icon: BarChart3, label: 'View Reports', color: 'text-emerald-600 bg-emerald-50' },
   ]
