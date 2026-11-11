@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #fdf8ed;
+  --color-primary-100: #f9edd2;
+  --color-primary-200: #f0daa9;
+  --color-primary-300: #e6c476;
+  --color-primary-400: #dea94d;
+  --color-primary-500: #d49135;
+  --color-primary-600: #bc732a;
+  --color-primary-700: #9c5525;
+  --color-primary-800: #804424;
+  --color-primary-900: #4f2418;
+  --color-primary-950: #3a1610;
+
+  --color-secondary-50: #fbf5f0;
+  --color-secondary-100: #f4e6d8;
+  --color-secondary-200: #e8cab0;
+  --color-secondary-300: #dba97d;
+  --color-secondary-400: #cf8a53;
+  --color-secondary-500: #c4703a;
+  --color-secondary-600: #b65a30;
+  --color-secondary-700: #97442a;
+  --color-secondary-800: #7a3828;
+  --color-secondary-900: #4f2418;
+  --color-secondary-950: #3a1610;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #faf8f5;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4c9b8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8a994;
+}
+
+/* Smooth transitions for interactive elements */
+button, a, input, select, textarea {
+  transition: all 0.2s ease;
+}
+
+/* Glass effect utility */
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Animated gradient background */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -8px rgba(79, 36, 24, 0.15);
+}
