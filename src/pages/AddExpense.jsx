@@ -15,7 +15,7 @@ export default function AddExpense() {
     category: '',
     description: '',
     account_id: '',
-    payment_method: 'cash',
+    payment_method: 'upi',
     reference_number: '',
     transaction_date: new Date().toISOString().split('T')[0],
   })

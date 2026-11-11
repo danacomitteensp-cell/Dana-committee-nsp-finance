@@ -165,6 +165,7 @@ export default function Transactions() {
             <option value="expense">Expense</option>
             <option value="refund">Refund</option>
             <option value="adjustment">Adjustment</option>
+            <option value="joining">Joining</option>
           </select>
           <select
             value={filterDirection}
